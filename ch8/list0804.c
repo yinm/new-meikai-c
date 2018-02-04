@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define puts_alert(str) ( putchar('\a') , puts(str) )
+#define puts_alert(str) ( putchar('\a'), puts(str) )
 
 int main(void)
 {
@@ -10,7 +10,7 @@ int main(void)
     scanf("%d", &n);
 
     if (n) {
-        puts_alert("その値はゼロではありません。");
+        puts_alert("その数はゼロではありません。");
     } else {
         puts_alert("その数はゼロです。");
     }
