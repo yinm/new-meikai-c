@@ -1,28 +1,29 @@
+// 2nd
 #include <stdio.h>
 
 int main(void)
 {
-    int sato = 178;
-    int sanaka = 175;
-    int masaki = 179;
+    int a = 178;
+    int b = 175;
+    int c = 179;
 
     int *isako, *hiroko;
 
-    isako = &sato;
-    hiroko = &masaki;
+    isako = &a;
+    hiroko = &c;
 
-    printf("いさ子さんの好きな人の身長: %d\n", *isako);
-    printf("ひろ子さんの好きな人の身長: %d\n", *hiroko);
+    printf("isako: %d\n", *isako);
+    printf("hiroko: %d\n", *hiroko);
 
-    isako = &sanaka;
+    isako = &b;
     *hiroko = 180;
 
     putchar('\n');
-    printf("佐藤くんの身長: %d\n", sato);
-    printf("佐中くんの身長: %d\n", sanaka);
-    printf("真崎くんの身長: %d\n", masaki);
-    printf("いも子さんの好きな人の身長: %d\n", *isako);
-    printf("ひろ子さんの好きな人の身長: %d\n", *hiroko);
+    printf("a: %d\n", a);
+    printf("b: %d\n", b);
+    printf("c: %d\n", c);
+    printf("isako: %d\n", *isako);
+    printf("hiroko: %d\n", *hiroko);
 
     return 0;
 }
