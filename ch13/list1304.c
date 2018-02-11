@@ -1,3 +1,5 @@
+// 2nd
+
 #include <time.h>
 #include <stdio.h>
 
@@ -28,7 +30,7 @@ void put_data(void)
         printf("\aファイルをオープンできません。\n");
     } else {
         fprintf(
-            fp,
+            fp, 
             "%d %d %d %d %d %d\n",
             timer->tm_year + 1900, timer->tm_mon + 1, timer->tm_mday,
             timer->tm_hour, timer->tm_min, timer->tm_sec
@@ -41,5 +43,6 @@ int main(void)
 {
     get_data();
     put_data();
+
     return 0;
 }
