@@ -1,3 +1,4 @@
+// 2nd
 #include <math.h>
 #include <stdio.h>
 
@@ -17,14 +18,14 @@ int main(void)
 {
     Point crnt, dest;
 
-    printf("現在地のX座標:");
+    printf("現在地のX座標: ");
     scanf("%lf", &crnt.x);
-    printf("Y座標:");
+    printf("　　　　Y座標: ");
     scanf("%lf", &crnt.y);
 
-    printf("目的地のX座標:");
+    printf("目的地のX座標: ");
     scanf("%lf", &dest.x);
-    printf("Y座標;");
+    printf("       Y座標: ");
     scanf("%lf", &dest.y);
 
     printf("目的地までの距離は%.2fです。\n", distance_of(crnt, dest));
