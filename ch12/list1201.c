@@ -1,3 +1,4 @@
+// 2nd
 #include <stdio.h>
 #include <string.h>
 
@@ -37,8 +38,8 @@ void sort(int num[], char str[][NAME_LEN], int n)
 int main(void)
 {
     int i;
-    int height[] = {178, 175, 173, 165, 179};
-    char name[][NAME_LEN] = {"Sato", "Sanaka", "Takao", "Mike", "Masaki"};
+    int height[] = { 178, 175, 173, 165, 179 };
+    char name[][NAME_LEN] = { "a", "b", "c", "d", "e" };
 
     for (i = 0; i < NUMBER; i++) {
         printf("%2d: %-8s%4d\n", i + 1, name[i], height[i]);
@@ -48,7 +49,7 @@ int main(void)
 
     puts("\n身長順にソートしました。");
     for (i = 0; i < NUMBER; i++) {
-        printf("%2d:%-8s%4d\n", i + 1, name[i], height[i]);
+        printf("%2d: %-8s%4d\n", i + 1, name[i], height[i]);
     }
 
     return 0;
