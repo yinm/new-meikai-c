@@ -1,3 +1,4 @@
+// 2nd
 #include <math.h>
 #include <stdio.h>
 
@@ -27,11 +28,14 @@ void put_info(Car c)
 int move(Car *c, Point dest)
 {
     double d = distance_of(c->pt, dest);
+
     if (d > c->fuel) {
         return 0;
     }
+
     c->pt = dest;
     c->fuel -= d;
+
     return 1;
 }
 
@@ -44,14 +48,13 @@ int main(void)
         Point dest;
 
         put_info(mycar);
-
-        printf("移動しますか【Yes:1 No:0】:");
+        printf("移動しますか 【Yes: 1 / No: 0】:");
         scanf("%d", &select);
         if (select != 1) break;
 
-        printf("目的地のX座標:");
+        printf("目的地のX座標: ");
         scanf("%lf", &dest.x);
-        printf("Y座標:");
+        printf("　　　　Y座標: ");
         scanf("%lf", &dest.y);
 
         if (!move(&mycar, dest)) {
