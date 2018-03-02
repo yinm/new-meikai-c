@@ -1,3 +1,4 @@
+// 2nd
 #include <stdio.h>
 
 #define NAME_LEN 64
@@ -11,18 +12,13 @@ typedef struct student {
 
 void hiroko(Student *std)
 {
-    if (std->height < 180) {
-        std->height = 180;
-    }
-
-    if (std->weight > 80) {
-        std->weight = 80;
-    }
+    if (std->height < 180) std->height = 180;
+    if (std->weight > 80) std->weight = 80;
 }
 
 int main(void)
 {
-    Student sanaka = {"Sanaka", 175, 62.5, 73000};
+    Student sanaka = { "Sanaka", 175, 62.5, 73000 };
 
     hiroko(&sanaka);
 
